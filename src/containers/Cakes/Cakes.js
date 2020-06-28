@@ -22,14 +22,65 @@ class Cakes extends Component {
                 </Index>
                 <h1>Wedding Cake</h1>
             </Relative>
-            <p>This was an Android app developed at University to enable the user to locate their parked car.</p>
+            <p>Bottom layer was raspberry and vanilla, middle layer was lemon and top layer was chocolate fudge.</p>
             <Flex justify={'center'} marginBottom="4em">
             <Zoomy
-              imageUrl={require('../../assets/findmycar2.png')}
+              imageUrl={require('../../assets/weddingcake.jpg')}
               renderThumbnail={({ showImage }) => 
                   <ImageButton  onClick={showImage}>
                     <img 
-                        src={require('../../assets/findmycar2.png')}
+                        src={require('../../assets/weddingcake.jpg')}
+                        alt="weddingcake"/> 
+                    </ImageButton>
+                            }
+              scale={[1,1]}
+              imageProps={{
+                style: {
+                  width: '80vw',
+                  height: 'auto'
+                }
+              }}
+            />
+        </Flex>
+        <Relative marginTop='100px' marginBottom='50px'>
+                <Index>
+                    <h1>02</h1>
+                </Index>
+                <h1>Leaving Party Cake</h1>
+            </Relative>
+            <p>Gin themed cake for leaving party</p>
+            <Flex justify={'center'} marginBottom="4em">
+            <Zoomy
+              imageUrl={require('../../assets/gintheme.jpg')}
+              renderThumbnail={({ showImage }) => 
+                  <ImageButton  onClick={showImage}>
+                    <img 
+                        src={require('../../assets/gintheme.jpg')}
+                        alt="gintheme"/> 
+                    </ImageButton>
+                            }
+              scale={[1,1]}
+              imageProps={{
+                style: {
+                  width: '80vw',
+                  height: 'auto'
+                }
+              }}
+            />
+        </Flex>
+        <Relative marginTop='100px' marginBottom='50px'>
+                <Index>
+                    <h1>03</h1>
+                </Index>
+                <h1>Chocolate Cake</h1>
+            </Relative>
+            <Flex justify={'center'} marginBottom="4em">
+            <Zoomy
+              imageUrl={require('../../assets/chocolatecake.jpg')}
+              renderThumbnail={({ showImage }) => 
+                  <ImageButton  onClick={showImage}>
+                    <img 
+                        src={require('../../assets/chocolatecake.jpg')}
                         alt="titanic"/> 
                     </ImageButton>
                             }
@@ -42,31 +93,8 @@ class Cakes extends Component {
               }}
             />
         </Flex>
- <Relative marginBottom="50px">
-                <Index><h1>02</h1></Index>
-            <h1>MagnetArt</h1>
-            </Relative>
-            <p>This was the subject of my MSc dissertation.  The idea was to produce an Android application which could be controlled using a magnet.</p>
-<ImageContainer>
-            <ParallaxImage
-                reduceHeight={0.4}
-                src={require('../../assets/screen_loading.png')}/>    
-                </ImageContainer>
-                <Relative marginTop="100px" marginBottom="50px">
-                <a href={Dissertation} target="_blank">Open PDF</a>
-                <Index><h1>03</h1></Index>
-            <h1>EDFA</h1>
-            </Relative>
-            <p>This formed half of the final year Physics project.  Experiments were carried out to investigate the characteristics of Erbium Doped Fibre Amplifiers.  These have applications in communications such as optical fibres.</p>
-        <a href={EDFApdf} target="_blank">Open PDF</a>
             <Relative marginTop="100px" marginBottom="50px">
                 <Index><h1>04</h1></Index>
-            <h1>This website</h1>
-            </Relative>
-            <p>This website was created using React JS with npm.  I followed the tutorials set out by FroDev and made tweaks.  The site is deployed using Netlify.  I have a keen interest in web development so this site has been a fun hobby, it is also a constant work in progress!</p>
-            <Relative marginTop="100px" marginBottom="50px">
-           
-                <Index><h1>05</h1></Index>
             <h1>?</h1>
             </Relative>
             <p>More is in the works.</p>
